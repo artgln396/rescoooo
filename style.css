@@ -1,0 +1,217 @@
+*{
+    background-color: black;
+}
+.page{
+    padding: 20px;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+.main-page{
+    margin-bottom: 10px;
+}
+.icon{
+    color: orangered;
+}
+.navbar{ 
+    position: sticky;
+    top: 0; 
+    width: 90%;
+    margin: auto;
+    padding: 50px, 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}    
+.navbar ul li a{
+    text-decoration-line: none;
+    color: white;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.main{
+    margin-top: 140px;
+    margin-bottom: 65px;
+    text-align: center;
+    color: white;
+}
+.main h1{
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+.main h3{
+    font-size: 25px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.link a {  
+    margin-top: 2px;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 4px solid orangered;
+    font-size: 2rem;
+    color:orangered;
+    border-radius: 50%;
+    margin:3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color:white;
+}
+
+.link a:hover {
+    background-color: orangered;
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    box-shadow:0 0 25px orangered;
+}
+.about{
+    margin-bottom: auto; 
+}
+
+/* Progress Bar Container */
+.progress-bar {
+    margin-top: 20px;
+    width: 75%;
+    height: 10px;
+    background-color: #ccc; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Filled Progress */
+.progress-fill {
+    height: 100%;
+    background-color: orangered;
+    border-radius: 10px;
+    width:50%;
+ }
+
+.contact {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+}
+
+.contact h1 {
+    margin-top: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.contact h1 span {
+    color: orangered; /* Kulay blue yung "Me" */
+}
+
+.contact-container {
+    border: 2px solid white;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.contact-container h2 {
+    color: orangered; /* Kulay blue yung headings */
+    font-size: 22px;
+}
+
+.social-icons a {   
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 2px solid orangered;
+    font-size: 2rem;
+    color:orangered;
+    border-radius: 50%;
+    margin:3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color:white;
+}
+
+.social-icons a:hover {
+    background-color: orangered;
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    box-shadow:0 0 25px orangered;
+}
+ 
+
+@media only screen and (max-width: 384px){
+    .navbar ul li a{
+        font-size: 7px;
+        text-decoration-line: none;
+        color: white;
+        margin: 0;
+    }
+    .main{
+        margin-bottom: 35px;
+        margin-top: 25px;
+        text-align: center;
+        color: white;
+    }
+    .main h1{
+        font-size: 35px;
+    }      
+    .main h3{
+        font-size: 15px;
+    }  
+    .link a {  
+        text-decoration: none;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 3rem;
+        height: 3rem;
+        background-color: transparent;
+        border: 4px solid orangered;
+        font-size: 27px;
+        color:orangered;
+        border-radius: 50%;
+        margin:3rem 1.5rem 3rem 0;
+        transition: 0.3s ease;
+        color:white;
+    }
+    
+    .link a:hover {
+        background-color: orangered;
+        color: black;
+        transform: scale(1.3) translateY(-5px);
+        box-shadow:0 0 25px orangered;
+    }
+    .about{
+        margin-bottom: auto; 
+    }
+    .about h4{
+        margin-left: 12.5%;
+    }
+    /* Progress Bar Container */
+    .progress-bar {
+        margin-left: 12.5%;
+        margin-top: 20px;
+        width: 75%;
+        height: 10px;
+        background-color: #ccc; 
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    /* Filled Progress */
+    .progress-fill {
+        height: 100%;
+        background-color: orangered;
+        border-radius: 10px;
+        width:50%;
+     }
+}
